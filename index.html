@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alamo Family Dental — San Antonio, TX</title>
+  <meta name="description" content="San Antonio's friendly family dentist. Accepting new patients. Call (210) 555-0237." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --blue: #2563eb; --blue-dark: #1d4ed8; --blue-light: #eff6ff; --gray-900: #111827; --gray-700: #374151; --gray-500: #6b7280; --gray-300: #d1d5db; --gray-100: #f3f4f6; --white: #ffffff; }
+    body { font-family: 'Inter', sans-serif; color: var(--gray-900); background: var(--white); }
+    h1, h2, h3 { font-family: 'DM Serif Display', Georgia, serif; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--white); border-bottom: 1px solid var(--gray-300); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
+    .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.1rem; }
+    .nav-phone { font-size: 0.875rem; font-weight: 600; color: var(--blue); }
+    .hero { background: var(--blue-light); padding: 80px 24px; text-align: center; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; line-height: 1.2; }
+    .hero p { font-size: 1.1rem; color: var(--gray-700); font-weight: 300; max-width: 600px; margin: 0 auto 32px; line-height: 1.7; }
+    .btn { display: inline-block; background: var(--blue); color: var(--white); font-weight: 600; font-size: 1rem; padding: 14px 32px; border-radius: 8px; transition: background 0.2s; }
+    .btn:hover { background: var(--blue-dark); }
+    .section { padding: 64px 24px; max-width: 960px; margin: 0 auto; }
+    .section-title { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 8px; }
+    .divider { width: 40px; height: 3px; background: var(--blue); margin-bottom: 40px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .service-card { background: var(--gray-100); border-radius: 10px; padding: 20px 24px; display: flex; align-items: center; gap: 12px; }
+    .service-card span { font-size: 0.95rem; font-weight: 500; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+    .about { background: var(--gray-100); padding: 64px 24px; }
+    .about-inner { max-width: 960px; margin: 0 auto; }
+    .about p { font-size: 1rem; color: var(--gray-700); font-weight: 300; line-height: 1.8; max-width: 700px; }
+    .contact { padding: 64px 24px; max-width: 960px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact h3 { font-size: 1.4rem; margin-bottom: 8px; }
+    .contact p { font-size: 0.9rem; color: var(--gray-500); font-weight: 300; margin-bottom: 24px; line-height: 1.6; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--gray-700); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .form-group input, .form-group textarea { width: 100%; border: 1px solid var(--gray-300); border-radius: 8px; padding: 12px 14px; font-size: 0.9rem; font-family: 'Inter', sans-serif; color: var(--gray-900); outline: none; transition: border 0.2s; }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--blue); }
+    .form-group textarea { resize: none; height: 90px; }
+    .submit-btn { width: 100%; background: var(--blue); color: var(--white); font-weight: 600; font-size: 1rem; padding: 14px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+    .submit-btn:hover { background: var(--blue-dark); }
+    .map-wrap { border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-300); }
+    .map-wrap iframe { width: 100%; height: 300px; display: block; border: none; }
+    footer { background: var(--gray-900); color: var(--gray-300); text-align: center; padding: 32px 24px; font-size: 0.85rem; font-weight: 300; line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Alamo Family Dental</span>
+  <a href="tel:2105550237" class="nav-phone">(210) 555-0237</a>
+</nav>
+
+<section class="hero">
+  <h1>San Antonio's Friendly Family Dentist —<br>Accepting New Patients</h1>
+  <p>From routine checkups to full smile makeovers, Alamo Family Dental makes every visit comfortable and stress-free. New patients always welcome.</p>
+  <a href="tel:2105550237" class="btn">Call (210) 555-0237</a>
+</section>
+
+<div class="section">
+  <h2 class="section-title">Our Services</h2>
+  <div class="divider"></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="dot"></div><span>General Checkups and Cleanings</span></div>
+    <div class="service-card"><div class="dot"></div><span>Teeth Whitening</span></div>
+    <div class="service-card"><div class="dot"></div><span>Fillings and Restorations</span></div>
+    <div class="service-card"><div class="dot"></div><span>Crowns and Bridges</span></div>
+    <div class="service-card"><div class="dot"></div><span>Invisalign and Orthodontics</span></div>
+    <div class="service-card"><div class="dot"></div><span>Emergency Dental Care</span></div>
+  </div>
+</div>
+
+<div class="about">
+  <div class="about-inner">
+    <h2 class="section-title">About Us</h2>
+    <div class="divider"></div>
+    <p>At Alamo Family Dental we believe great dental care should be accessible, comfortable, and affordable for everyone in San Antonio. Our team takes the time to explain every procedure and make sure you leave with a smile every single visit. We treat patients like family because that is exactly what our community is.</p>
+  </div>
+</div>
+
+<div class="contact">
+  <h2 class="section-title">Book Your Appointment Today</h2>
+  <div class="divider"></div>
+  <div class="contact-grid">
+    <div>
+      <h3>Request an Appointment</h3>
+      <p>Call or text us at (210) 555-0237. New patients welcome. Most insurance plans accepted.</p>
+      <form>
+        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" /></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(210) 555-0000" /></div>
+        <div class="form-group"><label>Type of appointment</label><input type="text" placeholder="e.g. Cleaning, whitening, checkup" /></div>
+        <div class="form-group"><label>Preferred date and time</label><input type="text" placeholder="e.g. Tuesday mornings" /></div>
+        <button type="submit" class="submit-btn">Request Appointment</button>
+      </form>
+    </div>
+    <div>
+      <h3 style="margin-bottom:16px;">Find Us</h3>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224587.23456789!2d-98.4936!3d29.4241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58af04d00ebd%3A0x8fd480c66cc1b36e!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>Alamo Family Dental — San Antonio, TX — (210) 555-0237</footer>
+</body>
+</html>
